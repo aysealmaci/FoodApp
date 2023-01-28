@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../const.dart';
-import '../widgets/app_bar.dart';
+
 import '../widgets/food_row_widget.dart';
 
 class HomePage extends StatelessWidget {
