@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:food_app/widgets/popular_food_widget.dart';
 
 import '../const.dart';
 
@@ -75,8 +76,16 @@ class HomePage extends StatelessWidget {
                   fontWeight: FontWeight.bold),
             ),
           ),
-          FoodRowWidget(
-              food_picture_path: "assets/salad.png", food_name: "Salad")
+          Row(
+            children: [
+              PopularFoodWidget(
+                  food_picture_path: "assets/salad.png", food_name: "Salad"),
+              PopularFoodWidget(
+                  food_picture_path: "assets/salad.png", food_name: "Salad"),
+              PopularFoodWidget(
+                  food_picture_path: "assets/salad.png", food_name: "Salad")
+            ],
+          )
 
           /*    Column(
             children: [
