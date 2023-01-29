@@ -78,19 +78,24 @@ class HomePage extends StatelessWidget {
           ),
           SingleChildScrollView(
             scrollDirection: Axis.horizontal,
-            child: Row(
-              children: [
-                PopularFoodWidget(
-                    food_picture_path: "assets/salad.png", food_name: "Salad"),
-                PopularFoodWidget(
-                    food_picture_path: "assets/salad.png", food_name: "Salad"),
-                PopularFoodWidget(
-                    food_picture_path: "assets/salad.png", food_name: "Salad"),
-                PopularFoodWidget(
-                    food_picture_path: "assets/salad.png", food_name: "Salad"),
-                PopularFoodWidget(
-                    food_picture_path: "assets/salad.png", food_name: "Salad")
-              ],
+            child: Padding(
+              padding: const EdgeInsets.all(15.0),
+              child: Row(
+                children: [
+                  PopularFoodWidget(
+                      food_picture_path: "assets/Chicken Brost.png",
+                      food_name: "Chicken Brost"),
+                  PopularFoodWidget(
+                      food_picture_path: "assets/Pasta Cheese.png",
+                      food_name: "Pasta Cheese"),
+                  PopularFoodWidget(
+                      food_picture_path: "assets/special recepie.png",
+                      food_name: "Special Recepie"),
+                  PopularFoodWidget(
+                      food_picture_path: "assets/salad2.png",
+                      food_name: "Salad"),
+                ],
+              ),
             ),
           )
 

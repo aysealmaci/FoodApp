@@ -11,22 +11,35 @@ class PopularFoodWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Card(
-      elevation: 5,
-      child: Padding(
-        padding: const EdgeInsets.all(12.0),
-        child: Container(
-          decoration: BoxDecoration(),
-          height: 135,
-          width: 80,
-          child: Column(
-            children: <Widget>[
-              Image.asset(food_picture_path, height: 100),
-              Text(food_name, style: TextStyle(fontWeight: FontWeight.bold)),
-            ],
+    return Stack(
+      children: [
+        Card(
+          elevation: 5,
+          child: Padding(
+            padding: const EdgeInsets.all(12.0),
+            child: Container(
+              decoration: BoxDecoration(),
+              height: 150,
+              width: 100,
+              child: Column(
+                children: <Widget>[
+                  Image.asset(food_picture_path, height: 100),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  Text(food_name,
+                      style:
+                          TextStyle(fontWeight: FontWeight.bold, fontSize: 15)),
+                ],
+              ),
+            ),
           ),
         ),
-      ),
+        Icon(
+          Icons.favorite,
+          color: Colors.red,
+        )
+      ],
     );
   }
 }
