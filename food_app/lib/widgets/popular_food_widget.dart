@@ -14,11 +14,11 @@ class PopularFoodWidget extends StatelessWidget {
     return Card(
       elevation: 5,
       child: Padding(
-        padding: const EdgeInsets.all(10.0),
+        padding: const EdgeInsets.all(12.0),
         child: Container(
           decoration: BoxDecoration(),
-          height: 500,
-          width: 50,
+          height: 135,
+          width: 80,
           child: Column(
             children: <Widget>[
               Image.asset(food_picture_path, height: 100),

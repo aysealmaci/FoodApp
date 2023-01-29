@@ -76,15 +76,22 @@ class HomePage extends StatelessWidget {
                   fontWeight: FontWeight.bold),
             ),
           ),
-          Row(
-            children: [
-              PopularFoodWidget(
-                  food_picture_path: "assets/salad.png", food_name: "Salad"),
-              PopularFoodWidget(
-                  food_picture_path: "assets/salad.png", food_name: "Salad"),
-              PopularFoodWidget(
-                  food_picture_path: "assets/salad.png", food_name: "Salad")
-            ],
+          SingleChildScrollView(
+            scrollDirection: Axis.horizontal,
+            child: Row(
+              children: [
+                PopularFoodWidget(
+                    food_picture_path: "assets/salad.png", food_name: "Salad"),
+                PopularFoodWidget(
+                    food_picture_path: "assets/salad.png", food_name: "Salad"),
+                PopularFoodWidget(
+                    food_picture_path: "assets/salad.png", food_name: "Salad"),
+                PopularFoodWidget(
+                    food_picture_path: "assets/salad.png", food_name: "Salad"),
+                PopularFoodWidget(
+                    food_picture_path: "assets/salad.png", food_name: "Salad")
+              ],
+            ),
           )
 
           /*    Column(
