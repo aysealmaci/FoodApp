@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:food_app/screens/food_content.dart';
 import 'package:food_app/screens/home.dart';
 import 'package:food_app/screens/splash.dart';
 
@@ -18,6 +19,6 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),
-        home: SplashScreen());
+        home: FoodContent());
   }
 }

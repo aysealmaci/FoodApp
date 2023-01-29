@@ -24,7 +24,10 @@ class FoodRowWidget extends StatelessWidget {
             ),
           ),
         ),
-        Text(food_name)
+        Text(
+          food_name,
+          style: TextStyle(fontWeight: FontWeight.bold),
+        )
       ],
     );
   }
